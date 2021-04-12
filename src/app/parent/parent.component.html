@@ -1,0 +1,27 @@
+<p>parent works!</p>
+
+<!-- <form [formGroup]="name" novalidate>
+  <input formControlName="name">
+
+  <div *ngIf="name.controls['name'].invalid && (name.controls['name'].dirty || name.controls['name'].touched)" 
+  class="alert alert-danger">
+
+    <div *ngIf="name.controls['name'].errors!.required">
+      Name is required.
+    </div>
+  </div>
+</form> -->
+
+<input type="text" [(ngModel)]="name1">
+<button (click)="method()" >Click ME</button>
+
+<!-- 
+Message {{ message }} -->
+
+<ul>
+  <li>
+    <a routerLink="./child">Child</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
